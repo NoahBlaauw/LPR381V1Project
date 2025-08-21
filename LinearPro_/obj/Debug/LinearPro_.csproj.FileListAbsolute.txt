@@ -1,0 +1,7 @@
+C:\Users\Reinhardt\source\repos\LinearPro_\obj\Debug\LinearPro_.csproj.AssemblyReference.cache
+C:\Users\Reinhardt\source\repos\LinearPro_\obj\Debug\LinearPro_.csproj.CoreCompileInputs.cache
+C:\Users\Reinhardt\source\repos\LinearPro_\bin\Debug\LinearPro_.exe.config
+C:\Users\Reinhardt\source\repos\LinearPro_\bin\Debug\LinearPro_.exe
+C:\Users\Reinhardt\source\repos\LinearPro_\bin\Debug\LinearPro_.pdb
+C:\Users\Reinhardt\source\repos\LinearPro_\obj\Debug\LinearPro_.exe
+C:\Users\Reinhardt\source\repos\LinearPro_\obj\Debug\LinearPro_.pdb
