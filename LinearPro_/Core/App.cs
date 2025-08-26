@@ -17,10 +17,10 @@ namespace LinearPro_.Core
         {
             // Reserve space
             _algorithms.Add(new PrimalSimplex());
-            /*_algorithms.Add(new RevisedSimplex());
-            _algorithms.Add(new BranchAndBoundSimplex());
+          //  _algorithms.Add(new RevisedSimplex());
+          //  _algorithms.Add(new BranchAndBoundSimplex());
             _algorithms.Add(new CuttingPlane());
-            _algorithms.Add(new KnapsackBnB());*/
+         //   _algorithms.Add(new KnapsackBnB());
         }
 
         public void Run()

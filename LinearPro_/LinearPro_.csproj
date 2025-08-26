@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algorithms\CuttingPlane.cs" />
     <Compile Include="Algorithms\IAlgorithm.cs" />
     <Compile Include="Algorithms\PrimalSimplex.cs" />
     <Compile Include="Core\App.cs" />

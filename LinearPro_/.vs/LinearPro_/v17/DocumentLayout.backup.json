@@ -1,0 +1,245 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|c:\\users\\reinhardt\\source\\repos\\linearpro_\\algorithms\\cuttingplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\cuttingplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\algorithms\\primalsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\primalsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\algorithms\\ialgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\ialgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\model\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:model\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\model\\constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:model\\constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\loadingbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\loadingbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\io\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:io\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\model\\variableinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:model\\variableinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\model\\lpmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:model\\lpmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\tablerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\tablerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\menuoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\menuoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\io\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:io\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CuttingPlane.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\CuttingPlane.cs",
+              "RelativeDocumentMoniker": "Algorithms\\CuttingPlane.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\CuttingPlane.cs",
+              "RelativeToolTip": "Algorithms\\CuttingPlane.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAAAFkBAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T18:16:28.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PrimalSimplex.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\PrimalSimplex.cs",
+              "RelativeDocumentMoniker": "Algorithms\\PrimalSimplex.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\PrimalSimplex.cs",
+              "RelativeToolTip": "Algorithms\\PrimalSimplex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:53:11.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IAlgorithm.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\IAlgorithm.cs",
+              "RelativeDocumentMoniker": "Algorithms\\IAlgorithm.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\IAlgorithm.cs",
+              "RelativeToolTip": "Algorithms\\IAlgorithm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:52:46.016Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "LPModel.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\LPModel.cs",
+              "RelativeDocumentMoniker": "Model\\LPModel.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\LPModel.cs",
+              "RelativeToolTip": "Model\\LPModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:52:33.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Constraint.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Constraint.cs",
+              "RelativeDocumentMoniker": "Model\\Constraint.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Constraint.cs",
+              "RelativeToolTip": "Model\\Constraint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:52:20.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "VariableInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\VariableInfo.cs",
+              "RelativeDocumentMoniker": "Model\\VariableInfo.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\VariableInfo.cs",
+              "RelativeToolTip": "Model\\VariableInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:52:09.788Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Enums.cs",
+              "RelativeDocumentMoniker": "Model\\Enums.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Enums.cs",
+              "RelativeToolTip": "Model\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:51:55.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Parser.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\Parser.cs",
+              "RelativeDocumentMoniker": "IO\\Parser.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\Parser.cs",
+              "RelativeToolTip": "IO\\Parser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:51:36.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "FileService.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\FileService.cs",
+              "RelativeDocumentMoniker": "IO\\FileService.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\FileService.cs",
+              "RelativeToolTip": "IO\\FileService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:51:11.796Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "TableRenderer.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\TableRenderer.cs",
+              "RelativeDocumentMoniker": "Core\\TableRenderer.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\TableRenderer.cs",
+              "RelativeToolTip": "Core\\TableRenderer.cs",
+              "ViewState": "AgIAAFcAAAAAAAAAAAAYwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:50:35.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "LoadingBar.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\LoadingBar.cs",
+              "RelativeDocumentMoniker": "Core\\LoadingBar.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\LoadingBar.cs",
+              "RelativeToolTip": "Core\\LoadingBar.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:50:13.262Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "App.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\App.cs",
+              "RelativeDocumentMoniker": "Core\\App.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\App.cs",
+              "RelativeToolTip": "Core\\App.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACgAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:49:35.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "MenuOption.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\MenuOption.cs",
+              "RelativeDocumentMoniker": "Core\\MenuOption.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\MenuOption.cs",
+              "RelativeToolTip": "Core\\MenuOption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:49:15.033Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:48:37.581Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
