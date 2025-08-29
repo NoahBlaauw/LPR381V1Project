@@ -5,3 +5,11 @@ C:\Users\Reinhardt\source\repos\LinearPro_\bin\Debug\LinearPro_.exe
 C:\Users\Reinhardt\source\repos\LinearPro_\bin\Debug\LinearPro_.pdb
 C:\Users\Reinhardt\source\repos\LinearPro_\obj\Debug\LinearPro_.exe
 C:\Users\Reinhardt\source\repos\LinearPro_\obj\Debug\LinearPro_.pdb
+C:\Users\noahb\OneDrive\Documents\GitHub\LPR381V1Project\LinearPro_\bin\Debug\LinearPro_.exe.config
+C:\Users\noahb\OneDrive\Documents\GitHub\LPR381V1Project\LinearPro_\bin\Debug\LinearPro_.exe
+C:\Users\noahb\OneDrive\Documents\GitHub\LPR381V1Project\LinearPro_\bin\Debug\LinearPro_.pdb
+C:\Users\noahb\OneDrive\Documents\GitHub\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.csproj.AssemblyReference.cache
+C:\Users\noahb\OneDrive\Documents\GitHub\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.exe.config
+C:\Users\noahb\OneDrive\Documents\GitHub\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.csproj.CoreCompileInputs.cache
+C:\Users\noahb\OneDrive\Documents\GitHub\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.exe
+C:\Users\noahb\OneDrive\Documents\GitHub\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.pdb

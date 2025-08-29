@@ -48,6 +48,7 @@
     <Compile Include="Algorithms\CuttingPlane.cs" />
     <Compile Include="Algorithms\IAlgorithm.cs" />
     <Compile Include="Algorithms\PrimalSimplex.cs" />
+    <Compile Include="Algorithms\RevisedSimplex.cs" />
     <Compile Include="Core\App.cs" />
     <Compile Include="Core\LoadingBar.cs" />
     <Compile Include="Core\MenuOption.cs" />
