@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Algorithms\CuttingPlane.cs" />
     <Compile Include="Algorithms\IAlgorithm.cs" />
+    <Compile Include="Algorithms\NLP.cs" />
     <Compile Include="Algorithms\PrimalSimplex.cs" />
     <Compile Include="Algorithms\RevisedSimplex.cs" />
     <Compile Include="Core\App.cs" />
@@ -54,6 +55,7 @@
     <Compile Include="Core\MenuOption.cs" />
     <Compile Include="Core\TableRenderer.cs" />
     <Compile Include="IO\FileService.cs" />
+    <Compile Include="IO\NLPParser.cs" />
     <Compile Include="IO\Parser.cs" />
     <Compile Include="Model\Constraint.cs" />
     <Compile Include="Model\Enums.cs" />

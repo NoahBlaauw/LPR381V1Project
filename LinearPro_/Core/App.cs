@@ -12,6 +12,10 @@ namespace LinearPro_.Core
         private readonly List<IAlgorithm> _algorithms = new List<IAlgorithm>();
         private LPModel _model;
         private List<string> _lastSolveSteps;
+        //NB: Variables related to non linear problems
+        private bool _isNonLinear;
+        private string _nlpContent;
+        private List<string> _nlpTerms;
 
         public App()
         {
@@ -89,12 +93,44 @@ namespace LinearPro_.Core
                 bar.Start("Reading file...", ConsoleColor.Red);
 
                 var text = _fileService.ReadAllText(path, onProgress: bar.Report);
+
+                //NB Detect non-linear problem
+                if (text.TrimStart().StartsWith("f(x)", StringComparison.OrdinalIgnoreCase))
+                {
+                    _isNonLinear = true;
+                    _nlpContent = text;
+
+                    // Split terms using NLPParser
+                    var nlpParser = new NLPParser();
+                    _nlpTerms = nlpParser.SplitTerms(_nlpContent);
+
+                    bar.Complete("File read & detected as Non-Linear.", ConsoleColor.Yellow);
+                    Console.ForegroundColor = ConsoleColor.Yellow;
+                    Console.WriteLine("It looks like the file you chose is a non linear problem..");
+                    Console.WriteLine();
+                    Console.WriteLine(_nlpContent);
+
+                    // Optionally, print the terms
+                    Console.WriteLine("\nTerms detected:");
+                    foreach (var term in _nlpTerms)
+                        Console.WriteLine(term);
+
+                    Console.ResetColor();
+                    _model = null; // Ensure no LPModel is set
+                    return;
+                }
+                else
+                {
+                    _isNonLinear = false;
+                    _nlpContent = null;
+                    _nlpTerms = null;
+                }
+
                 var parser = new Parser();
                 _model = parser.Parse(text);
 
                 bar.Complete("File read & model stored.", ConsoleColor.Green);
 
-                // Show a quick preview table
                 TableRenderer.RenderModelAsTable(_model);
             }
             catch (Exception ex)
@@ -107,6 +143,24 @@ namespace LinearPro_.Core
 
         private void HandleCalculate()
         {
+            //NB: Remember to route the program to the NLP calculator and change the "Not supported" message to something else
+            if (_isNonLinear)
+            {
+                Console.ForegroundColor = ConsoleColor.Yellow;
+                Console.WriteLine("Non-linear problem detected. Calculation is not supported in this version.");
+                Console.WriteLine();
+                Console.WriteLine(_nlpContent);
+
+                // Show terms again if desired
+                Console.WriteLine("\nTerms detected:");
+                if (_nlpTerms != null)
+                    foreach (var term in _nlpTerms)
+                        Console.WriteLine(term);
+
+                Console.ResetColor();
+                return;
+            }
+
             if (_model == null)
             {
                 Console.WriteLine("Please read an input file first.");
