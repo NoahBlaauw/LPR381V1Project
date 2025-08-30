@@ -15,7 +15,6 @@ namespace LinearPro_.Core
         //NB: Variables related to non linear problems
         private bool _isNonLinear;
         private string _nlpContent;
-        private List<string> _nlpTerms;
 
         public App()
         {
@@ -95,26 +94,16 @@ namespace LinearPro_.Core
                 var text = _fileService.ReadAllText(path, onProgress: bar.Report);
 
                 //NB Detect non-linear problem
-                if (text.TrimStart().StartsWith("f(x)", StringComparison.OrdinalIgnoreCase))
+                if (text.TrimStart().StartsWith("f", StringComparison.OrdinalIgnoreCase))
                 {
                     _isNonLinear = true;
                     _nlpContent = text;
-
-                    // Split terms using NLPParser
-                    var nlpParser = new NLPParser();
-                    _nlpTerms = nlpParser.SplitTerms(_nlpContent);
 
                     bar.Complete("File read & detected as Non-Linear.", ConsoleColor.Yellow);
                     Console.ForegroundColor = ConsoleColor.Yellow;
                     Console.WriteLine("It looks like the file you chose is a non linear problem..");
                     Console.WriteLine();
                     Console.WriteLine(_nlpContent);
-
-                    // Optionally, print the terms
-                    Console.WriteLine("\nTerms detected:");
-                    foreach (var term in _nlpTerms)
-                        Console.WriteLine(term);
-
                     Console.ResetColor();
                     _model = null; // Ensure no LPModel is set
                     return;
@@ -123,7 +112,6 @@ namespace LinearPro_.Core
                 {
                     _isNonLinear = false;
                     _nlpContent = null;
-                    _nlpTerms = null;
                 }
 
                 var parser = new Parser();
@@ -143,21 +131,13 @@ namespace LinearPro_.Core
 
         private void HandleCalculate()
         {
-            //NB: Remember to route the program to the NLP calculator and change the "Not supported" message to something else
+            //NB: 
             if (_isNonLinear)
             {
-                Console.ForegroundColor = ConsoleColor.Yellow;
-                Console.WriteLine("Non-linear problem detected. Calculation is not supported in this version.");
-                Console.WriteLine();
-                Console.WriteLine(_nlpContent);
-
-                // Show terms again if desired
-                Console.WriteLine("\nTerms detected:");
-                if (_nlpTerms != null)
-                    foreach (var term in _nlpTerms)
-                        Console.WriteLine(term);
-
-                Console.ResetColor();
+                var nlpSolver = new NLP();
+                nlpSolver.FunctionString = _nlpContent;
+                _lastSolveSteps = nlpSolver.Solve();
+                // Now HandleDisplaySteps will show these steps
                 return;
             }
 
