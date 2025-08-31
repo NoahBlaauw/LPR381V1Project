@@ -1,0 +1,163 @@
+LinearPro_ – Branch & Bound Result
+Timestamp: 31/08/2025 13:52:04
+
+Best integer Z: 15
+
+Incumbent solution (original variables):
+  X1 = 0
+  X2 = 1
+  X3 = 1
+  X4 = 1
+  X5 = 0
+  X6 = 1
+
+Note: Best integer solution found.
+
+Steps:
+  [B&B] Starting.
+  [Sol p1] X1 = 0
+  [Sol p1] X2 = 1
+  [Sol p1] X3 = 1
+  [Sol p1] X4 = 1
+  [Sol p1] X5 = 0.2
+  [Sol p1] X6 = 1
+  [Expand] p1  Bound Z=15.4  
+  [Sol p1.1] X1 = 0.181818
+  [Sol p1.1] X2 = 1
+  [Sol p1.1] X3 = 1
+  [Sol p1.1] X4 = 1
+  [Sol p1.1] X5 = 0
+  [Sol p1.1] X6 = 1
+  [Sol p1.2] X1 = 0
+  [Sol p1.2] X2 = 1
+  [Sol p1.2] X3 = 1
+  [Sol p1.2] X4 = 1
+  [Sol p1.2] X5 = 0.2
+  [Sol p1.2] X6 = 1
+  [Expand] p1.2  Bound Z=15.4  [X5 >= 1]
+  [Sol p1.2.1] X1 = 0.181818
+  [Sol p1.2.1] X2 = 1
+  [Sol p1.2.1] X3 = 1
+  [Sol p1.2.1] X4 = 1
+  [Sol p1.2.1] X5 = 0
+  [Sol p1.2.1] X6 = 1
+  [Skip] p1.2.2 duplicate constraint X5 >= 1
+  [Prune] p1.2.2 infeasible or duplicate.
+  [Expand] p1.1  Bound Z=15.363636  [X5 <= 0]
+  [Sol p1.1.1] X1 = 0
+  [Sol p1.1.1] X2 = 1
+  [Sol p1.1.1] X3 = 1
+  [Sol p1.1.1] X4 = 1
+  [Sol p1.1.1] X5 = 0
+  [Sol p1.1.1] X6 = 1
+  [Sol p1.1.2] X1 = 1
+  [Sol p1.1.2] X2 = 1
+  [Sol p1.1.2] X3 = 1
+  [Sol p1.1.2] X4 = 1
+  [Sol p1.1.2] X5 = -0.9
+  [Sol p1.1.2] X6 = 1
+  [Expand] p1.2.1  Bound Z=15.363636  [X5 <= 0]
+  [Sol p1.2.1.1] X1 = 0
+  [Sol p1.2.1.1] X2 = 1
+  [Sol p1.2.1.1] X3 = 1
+  [Sol p1.2.1.1] X4 = 1
+  [Sol p1.2.1.1] X5 = 0
+  [Sol p1.2.1.1] X6 = 1
+  [Sol p1.2.1.2] X1 = 1
+  [Sol p1.2.1.2] X2 = 1
+  [Sol p1.2.1.2] X3 = 1
+  [Sol p1.2.1.2] X4 = 1
+  [Sol p1.2.1.2] X5 = -0.9
+  [Sol p1.2.1.2] X6 = 1
+  [Expand] p1.1.2  Bound Z=15.2  [X1 >= 1]
+  [Sol p1.1.2.1] X1 = 1.090909
+  [Sol p1.1.2.1] X2 = 1
+  [Sol p1.1.2.1] X3 = 1
+  [Sol p1.1.2.1] X4 = 1
+  [Sol p1.1.2.1] X5 = -1
+  [Sol p1.1.2.1] X6 = 1
+  [Sol p1.1.2.2] X1 = 1
+  [Sol p1.1.2.2] X2 = 1
+  [Sol p1.1.2.2] X3 = 1
+  [Sol p1.1.2.2] X4 = 1
+  [Sol p1.1.2.2] X5 = -0.9
+  [Sol p1.1.2.2] X6 = 1
+  [Expand] p1.2.1.2  Bound Z=15.2  [X1 >= 1]
+  [Sol p1.2.1.2.1] X1 = 1.090909
+  [Sol p1.2.1.2.1] X2 = 1
+  [Sol p1.2.1.2.1] X3 = 1
+  [Sol p1.2.1.2.1] X4 = 1
+  [Sol p1.2.1.2.1] X5 = -1
+  [Sol p1.2.1.2.1] X6 = 1
+  [Sol p1.2.1.2.2] X1 = 1
+  [Sol p1.2.1.2.2] X2 = 1
+  [Sol p1.2.1.2.2] X3 = 1
+  [Sol p1.2.1.2.2] X4 = 1
+  [Sol p1.2.1.2.2] X5 = -0.9
+  [Sol p1.2.1.2.2] X6 = 1
+  [Expand] p1.1.2.2  Bound Z=15.2  [X5 >= 0]
+  [Sol p1.1.2.2.1] X1 = 1.090909
+  [Sol p1.1.2.2.1] X2 = 1
+  [Sol p1.1.2.2.1] X3 = 1
+  [Sol p1.1.2.2.1] X4 = 1
+  [Sol p1.1.2.2.1] X5 = -1
+  [Sol p1.1.2.2.1] X6 = 1
+  [Skip] p1.1.2.2.2 duplicate constraint X5 >= 0
+  [Prune] p1.1.2.2.2 infeasible or duplicate.
+  [Expand] p1.2.1.2.2  Bound Z=15.2  [X5 >= 0]
+  [Sol p1.2.1.2.2.1] X1 = 1.090909
+  [Sol p1.2.1.2.2.1] X2 = 1
+  [Sol p1.2.1.2.2.1] X3 = 1
+  [Sol p1.2.1.2.2.1] X4 = 1
+  [Sol p1.2.1.2.2.1] X5 = -1
+  [Sol p1.2.1.2.2.1] X6 = 1
+  [Skip] p1.2.1.2.2.2 duplicate constraint X5 >= 0
+  [Prune] p1.2.1.2.2.2 infeasible or duplicate.
+  [Expand] p1.1.2.1  Bound Z=15.181818  [X5 <= -1]
+  [Skip] p1.1.2.1.1 duplicate constraint X1 <= 1
+  [Prune] p1.1.2.1.1 infeasible or duplicate.
+  [Sol p1.1.2.1.2] X1 = 2
+  [Sol p1.1.2.1.2] X2 = 1
+  [Sol p1.1.2.1.2] X3 = 1
+  [Sol p1.1.2.1.2] X4 = 1
+  [Sol p1.1.2.1.2] X5 = -2
+  [Sol p1.1.2.1.2] X6 = 1
+  [Expand] p1.2.1.2.1  Bound Z=15.181818  [X5 <= -1]
+  [Skip] p1.2.1.2.1.1 duplicate constraint X1 <= 1
+  [Prune] p1.2.1.2.1.1 infeasible or duplicate.
+  [Sol p1.2.1.2.1.2] X1 = 2
+  [Sol p1.2.1.2.1.2] X2 = 1
+  [Sol p1.2.1.2.1.2] X3 = 1
+  [Sol p1.2.1.2.1.2] X4 = 1
+  [Sol p1.2.1.2.1.2] X5 = -2
+  [Sol p1.2.1.2.1.2] X6 = 1
+  [Expand] p1.1.2.2.1  Bound Z=15.181818  [X5 <= -1]
+  [Skip] p1.1.2.2.1.1 duplicate constraint X1 <= 1
+  [Prune] p1.1.2.2.1.1 infeasible or duplicate.
+  [Sol p1.1.2.2.1.2] X1 = 2
+  [Sol p1.1.2.2.1.2] X2 = 1
+  [Sol p1.1.2.2.1.2] X3 = 1
+  [Sol p1.1.2.2.1.2] X4 = 1
+  [Sol p1.1.2.2.1.2] X5 = -2
+  [Sol p1.1.2.2.1.2] X6 = 1
+  [Expand] p1.2.1.2.2.1  Bound Z=15.181818  [X5 <= -1]
+  [Skip] p1.2.1.2.2.1.1 duplicate constraint X1 <= 1
+  [Prune] p1.2.1.2.2.1.1 infeasible or duplicate.
+  [Sol p1.2.1.2.2.1.2] X1 = 2
+  [Sol p1.2.1.2.2.1.2] X2 = 1
+  [Sol p1.2.1.2.2.1.2] X3 = 1
+  [Sol p1.2.1.2.2.1.2] X4 = 1
+  [Sol p1.2.1.2.2.1.2] X5 = -2
+  [Sol p1.2.1.2.2.1.2] X6 = 1
+  [Expand] p1.1.1  Bound Z=15  [X1 <= 0]
+  [Incumbent] p1.1.1  Z=15
+  [Expand] p1.2.1.1  Bound Z=15  [X1 <= 0]
+  [Prune] p1.2.1.1 by bound (LPBound 15 <= incumbent 15).
+  [Expand] p1.1.2.1.2  Bound Z=15  [X1 >= 2]
+  [Prune] p1.1.2.1.2 by bound (LPBound 15 <= incumbent 15).
+  [Expand] p1.2.1.2.1.2  Bound Z=15  [X1 >= 2]
+  [Prune] p1.2.1.2.1.2 by bound (LPBound 15 <= incumbent 15).
+  [Expand] p1.1.2.2.1.2  Bound Z=15  [X1 >= 2]
+  [Prune] p1.1.2.2.1.2 by bound (LPBound 15 <= incumbent 15).
+  [Expand] p1.2.1.2.2.1.2  Bound Z=15  [X1 >= 2]
+  [Prune] p1.2.1.2.2.1.2 by bound (LPBound 15 <= incumbent 15).

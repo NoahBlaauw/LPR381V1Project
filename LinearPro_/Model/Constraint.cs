@@ -4,8 +4,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-using System.Linq;
-
 namespace LinearPro_.Model
 {
     internal sealed class Constraint

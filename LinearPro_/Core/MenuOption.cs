@@ -11,7 +11,8 @@ namespace LinearPro_.Core
         ReadFile = 1,
         Calculate = 2,
         DisplaySteps = 3,
-        Exit = 4
+        SensitivityAnalysis = 4, 
+        Exit = 5
     }
 }
 

@@ -21,3 +21,10 @@ C:\Users\cash\Documents\GitHub\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.e
 C:\Users\cash\Documents\GitHub\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.csproj.CoreCompileInputs.cache
 C:\Users\cash\Documents\GitHub\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.exe
 C:\Users\cash\Documents\GitHub\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.pdb
+C:\Users\Reinhardt\Documents\LPR 381 Project]\LPR381V1Project\LinearPro_\bin\Debug\LinearPro_.exe.config
+C:\Users\Reinhardt\Documents\LPR 381 Project]\LPR381V1Project\LinearPro_\bin\Debug\LinearPro_.exe
+C:\Users\Reinhardt\Documents\LPR 381 Project]\LPR381V1Project\LinearPro_\bin\Debug\LinearPro_.pdb
+C:\Users\Reinhardt\Documents\LPR 381 Project]\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.csproj.AssemblyReference.cache
+C:\Users\Reinhardt\Documents\LPR 381 Project]\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.csproj.CoreCompileInputs.cache
+C:\Users\Reinhardt\Documents\LPR 381 Project]\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.exe
+C:\Users\Reinhardt\Documents\LPR 381 Project]\LPR381V1Project\LinearPro_\obj\Debug\LinearPro_.pdb

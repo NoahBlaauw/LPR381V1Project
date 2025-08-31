@@ -1,66 +1,106 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\",
+  "WorkspaceRootPath": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|c:\\users\\cash\\documents\\github\\lpr381v1project\\linearpro_\\algorithms\\revisedsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\revisedsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\coefficientchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\coefficientchanger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\algorithms\\primalsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|c:\\users\\reinhardt\\source\\repos\\linearpro_\\core\\sensitivitylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\sensitivitylogger.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|c:\\users\\reinhardt\\source\\repos\\linearpro_\\core\\sensitivitymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\sensitivitymenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\dualityanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\dualityanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\algorithms\\dualsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\dualsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\constraintadder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\constraintadder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\variableadder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\variableadder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\algorithms\\primalsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\primalsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\core\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\algorithms\\ialgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\ialgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\algorithms\\cuttingplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\cuttingplane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:Model\\Constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\model\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:model\\enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\algorithms\\sensitivityanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\sensitivityanalyzer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\model\\constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:model\\constraint.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\algorithms\\revisedsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\revisedsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\core\\loadingbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\loadingbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\io\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:io\\parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\model\\variableinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:model\\variableinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\model\\lpmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:model\\lpmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\core\\tablerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\tablerenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\core\\menuoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\core\\menuoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\menuoption.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\LoadingBar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:Core\\LoadingBar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\io\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:io\\fileservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\TableRenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:Core\\TableRenderer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\FileService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:IO\\FileService.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\Parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:IO\\Parser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\VariableInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:Model\\VariableInfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\LPModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:Model\\LPModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:Model\\Enums.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\algorithms\\knapsack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\knapsack.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\algorithms\\ialgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\ialgorithm.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\CuttingPlane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:Algorithms\\CuttingPlane.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\algorithms\\branchandboundsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\branchandboundsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,21 +110,8 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "RevisedSimplex.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Algorithms\\RevisedSimplex.cs",
-              "RelativeDocumentMoniker": "Algorithms\\RevisedSimplex.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Algorithms\\RevisedSimplex.cs",
-              "RelativeToolTip": "Algorithms\\RevisedSimplex.cs",
-              "ViewState": "AgIAANIBAAAAAAAAAAAYwOoBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-28T21:41:01.282Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
@@ -92,95 +119,145 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "PrimalSimplex.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Algorithms\\PrimalSimplex.cs",
-              "RelativeDocumentMoniker": "Algorithms\\PrimalSimplex.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Algorithms\\PrimalSimplex.cs",
-              "RelativeToolTip": "Algorithms\\PrimalSimplex.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "SensitivityLogger.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\SensitivityLogger.cs",
+              "RelativeDocumentMoniker": "Core\\SensitivityLogger.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\SensitivityLogger.cs",
+              "RelativeToolTip": "Core\\SensitivityLogger.cs",
+              "ViewState": "AgIAANgAAAAAAAAAAAAAAPkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:53:11.615Z",
+              "WhenOpened": "2025-08-31T16:23:58.831Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CuttingPlane.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Algorithms\\CuttingPlane.cs",
-              "RelativeDocumentMoniker": "Algorithms\\CuttingPlane.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Algorithms\\CuttingPlane.cs",
-              "RelativeToolTip": "Algorithms\\CuttingPlane.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFkBAAAnAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "CoefficientChanger.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\CoefficientChanger.cs",
+              "RelativeDocumentMoniker": "Core\\CoefficientChanger.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\CoefficientChanger.cs",
+              "RelativeToolTip": "Core\\CoefficientChanger.cs",
+              "ViewState": "AgIAALIAAAAAAAAAAAAQwNYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-21T18:16:28.996Z"
+              "WhenOpened": "2025-08-31T15:03:09.965Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "IAlgorithm.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Algorithms\\IAlgorithm.cs",
-              "RelativeDocumentMoniker": "Algorithms\\IAlgorithm.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Algorithms\\IAlgorithm.cs",
-              "RelativeToolTip": "Algorithms\\IAlgorithm.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAmAAAAAAAAAA==",
+              "Title": "DualityAnalyzer.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\DualityAnalyzer.cs",
+              "RelativeDocumentMoniker": "Core\\DualityAnalyzer.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\DualityAnalyzer.cs",
+              "RelativeToolTip": "Core\\DualityAnalyzer.cs",
+              "ViewState": "AgIAABABAAAAAAAAAAA6wDUBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:52:46.016Z"
+              "WhenOpened": "2025-08-31T13:48:34.76Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DualSimplex.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\DualSimplex.cs",
+              "RelativeDocumentMoniker": "Algorithms\\DualSimplex.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\DualSimplex.cs",
+              "RelativeToolTip": "Algorithms\\DualSimplex.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAmwIcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T12:05:33.56Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "Constraint.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Model\\Constraint.cs",
-              "RelativeDocumentMoniker": "Model\\Constraint.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Model\\Constraint.cs",
-              "RelativeToolTip": "Model\\Constraint.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Title": "VariableAdder.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\VariableAdder.cs",
+              "RelativeDocumentMoniker": "Core\\VariableAdder.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\VariableAdder.cs",
+              "RelativeToolTip": "Core\\VariableAdder.cs",
+              "ViewState": "AgIAAEYAAAAAAAAAAAAAAPkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:52:20.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "VariableInfo.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Model\\VariableInfo.cs",
-              "RelativeDocumentMoniker": "Model\\VariableInfo.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Model\\VariableInfo.cs",
-              "RelativeToolTip": "Model\\VariableInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:52:09.788Z"
+              "WhenOpened": "2025-08-31T12:03:37.473Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Enums.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Model\\Enums.cs",
-              "RelativeDocumentMoniker": "Model\\Enums.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Model\\Enums.cs",
-              "RelativeToolTip": "Model\\Enums.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Title": "ConstraintAdder.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\ConstraintAdder.cs",
+              "RelativeDocumentMoniker": "Core\\ConstraintAdder.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\ConstraintAdder.cs",
+              "RelativeToolTip": "Core\\ConstraintAdder.cs",
+              "ViewState": "AgIAAGIAAAAAAAAAAAAmwHsAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:51:55.952Z"
+              "WhenOpened": "2025-08-31T12:02:54.781Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
-              "Title": "Parser.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\IO\\Parser.cs",
-              "RelativeDocumentMoniker": "IO\\Parser.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\IO\\Parser.cs",
-              "RelativeToolTip": "IO\\Parser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
+              "Title": "App.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\App.cs",
+              "RelativeDocumentMoniker": "Core\\App.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\App.cs",
+              "RelativeToolTip": "Core\\App.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:51:36.08Z"
+              "WhenOpened": "2025-08-30T19:14:27.056Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 7,
+              "Title": "PrimalSimplex.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\PrimalSimplex.cs",
+              "RelativeDocumentMoniker": "Algorithms\\PrimalSimplex.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\PrimalSimplex.cs",
+              "RelativeToolTip": "Algorithms\\PrimalSimplex.cs",
+              "ViewState": "AgIAAHUAAAAAAAAAAAAhwJYAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:53:11.615Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "RevisedSimplex.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\RevisedSimplex.cs",
+              "RelativeDocumentMoniker": "Algorithms\\RevisedSimplex.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\RevisedSimplex.cs",
+              "RelativeToolTip": "Algorithms\\RevisedSimplex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-28T21:41:01.282Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SensitivityMenu.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\SensitivityMenu.cs",
+              "RelativeDocumentMoniker": "Core\\SensitivityMenu.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\SensitivityMenu.cs",
+              "RelativeToolTip": "Core\\SensitivityMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADgAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-31T10:38:19.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SensitivityAnalyzer.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\SensitivityAnalyzer.cs",
+              "RelativeDocumentMoniker": "Algorithms\\SensitivityAnalyzer.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\SensitivityAnalyzer.cs",
+              "RelativeToolTip": "Algorithms\\SensitivityAnalyzer.cs",
+              "ViewState": "AgIAAHAAAAAAAAAAAAAcwO0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T19:14:11.753Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "FileService.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\IO\\FileService.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\FileService.cs",
               "RelativeDocumentMoniker": "IO\\FileService.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\IO\\FileService.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\FileService.cs",
               "RelativeToolTip": "IO\\FileService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAABhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -188,47 +265,35 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TableRenderer.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Core\\TableRenderer.cs",
-              "RelativeDocumentMoniker": "Core\\TableRenderer.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Core\\TableRenderer.cs",
-              "RelativeToolTip": "Core\\TableRenderer.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAAYwBgAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "Parser.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\Parser.cs",
+              "RelativeDocumentMoniker": "IO\\Parser.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\IO\\Parser.cs",
+              "RelativeToolTip": "IO\\Parser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:50:35.936Z"
+              "WhenOpened": "2025-08-18T17:51:36.08Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "App.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Core\\App.cs",
-              "RelativeDocumentMoniker": "Core\\App.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Core\\App.cs",
-              "RelativeToolTip": "Core\\App.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAxwBMAAAAyAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "MenuOption.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\MenuOption.cs",
+              "RelativeDocumentMoniker": "Core\\MenuOption.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\MenuOption.cs",
+              "RelativeToolTip": "Core\\MenuOption.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:49:35.129Z"
+              "WhenOpened": "2025-08-18T17:49:15.033Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "LPModel.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Model\\LPModel.cs",
-              "RelativeDocumentMoniker": "Model\\LPModel.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Model\\LPModel.cs",
-              "RelativeToolTip": "Model\\LPModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:52:33.08Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 14,
               "Title": "LoadingBar.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Core\\LoadingBar.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\LoadingBar.cs",
               "RelativeDocumentMoniker": "Core\\LoadingBar.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Core\\LoadingBar.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\LoadingBar.cs",
               "RelativeToolTip": "Core\\LoadingBar.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwB0AAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -236,27 +301,123 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "MenuOption.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Core\\MenuOption.cs",
-              "RelativeDocumentMoniker": "Core\\MenuOption.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Core\\MenuOption.cs",
-              "RelativeToolTip": "Core\\MenuOption.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 18,
+              "Title": "VariableInfo.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\VariableInfo.cs",
+              "RelativeDocumentMoniker": "Model\\VariableInfo.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\VariableInfo.cs",
+              "RelativeToolTip": "Model\\VariableInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:49:15.033Z"
+              "WhenOpened": "2025-08-18T17:52:09.788Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 19,
+              "Title": "LPModel.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\LPModel.cs",
+              "RelativeDocumentMoniker": "Model\\LPModel.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\LPModel.cs",
+              "RelativeToolTip": "Model\\LPModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:52:33.08Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Constraint.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Constraint.cs",
+              "RelativeDocumentMoniker": "Model\\Constraint.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Constraint.cs",
+              "RelativeToolTip": "Model\\Constraint.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:52:20.839Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Program.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-18T17:48:37.581Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "TableRenderer.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\TableRenderer.cs",
+              "RelativeDocumentMoniker": "Core\\TableRenderer.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Core\\TableRenderer.cs",
+              "RelativeToolTip": "Core\\TableRenderer.cs",
+              "ViewState": "AgIAADwAAAAAAAAAAAAYwBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:50:35.936Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Enums.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Enums.cs",
+              "RelativeDocumentMoniker": "Model\\Enums.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Model\\Enums.cs",
+              "RelativeToolTip": "Model\\Enums.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-18T17:51:55.952Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Knapsack.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\Knapsack.cs",
+              "RelativeDocumentMoniker": "Algorithms\\Knapsack.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\Knapsack.cs",
+              "RelativeToolTip": "Algorithms\\Knapsack.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T18:37:16.057Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "IAlgorithm.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\IAlgorithm.cs",
+              "RelativeDocumentMoniker": "Algorithms\\IAlgorithm.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\IAlgorithm.cs",
+              "RelativeToolTip": "Algorithms\\IAlgorithm.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T19:00:51.657Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "BranchAndBoundSimplex.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\BranchAndBoundSimplex.cs",
+              "RelativeDocumentMoniker": "Algorithms\\BranchAndBoundSimplex.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\BranchAndBoundSimplex.cs",
+              "RelativeToolTip": "Algorithms\\BranchAndBoundSimplex.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-30T18:42:50.264Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CuttingPlane.cs",
+              "DocumentMoniker": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\CuttingPlane.cs",
+              "RelativeDocumentMoniker": "Algorithms\\CuttingPlane.cs",
+              "ToolTip": "C:\\Users\\Reinhardt\\source\\repos\\LinearPro_\\Algorithms\\CuttingPlane.cs",
+              "RelativeToolTip": "Algorithms\\CuttingPlane.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-08-21T18:16:28.996Z"
             }
           ]
         }

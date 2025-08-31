@@ -9,9 +9,12 @@ using ModelConstraint = LinearPro_.Model.Constraint;
 
 namespace LinearPro_.Algorithms
 {
+
+
  
     internal sealed class CuttingPlane : IAlgorithm
     {
+
         public string Name => "Cutting Plane (Gomory, simplex-based)";
         private const double EPS = 1e-9;
         private readonly List<string> _steps = new List<string>();

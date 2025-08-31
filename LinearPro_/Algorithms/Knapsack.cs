@@ -1,0 +1,377 @@
+﻿using LinearPro_.Model;
+using System;
+using System.Collections.Generic;
+using System.Globalization;
+using System.Linq;
+
+namespace LinearPro_.Algorithms
+{
+    internal sealed class Knapsack : IAlgorithm
+    {
+
+
+        public string Name => "Knapsack";
+
+        private sealed class Node
+        {
+            // Fix per ORIGINAL variable index: -1 unknown, 0 fixed to 0, 1 fixed to 1
+            public int[] Fix;
+            public string Label;           // p0, p1, p2, p1.1, p1.2, ...
+            public string BranchHeader;    // "x5 = 0" / "x5 = 1" or ""
+            public double Bound;           // greedy upper bound (used for display)
+            public double ValueFixed;      // sum of profits for fix==1
+            public double WeightFixed;     // sum of weights for fix==1
+            public int? PivotOrig;         // original index of pivot (first fractional)
+            public List<(int orig, double take, double left)> Plan; // display rows in ORIGINAL order
+        }
+
+        public List<string> Solve(LPModel model)
+        {
+            var steps = new List<string>();
+
+            // --- Expect exactly one <= knapsack constraint ---
+            if (model?.Constraints == null || model.Constraints.Count != 1 ||
+                model.Constraints[0].Relation != Relation.LE)
+            {
+                return new List<string> { "ERROR: Knapsack expects exactly one <= constraint." };
+            }
+
+            var values = model.ObjectiveCoefficients;
+            var weights = model.Constraints[0].Coefficients;
+            double capacity = model.Constraints[0].Rhs;
+            int n = values.Length;
+
+            if (weights.Length != n)
+                return new List<string> { "ERROR: Objective and constraint variable counts differ." };
+
+            // Names (x1..xn if none provided)
+            string[] names = (model.VariableColumns != null && model.VariableColumns.Count == n)
+                ? model.VariableColumns.ToArray()
+                : Enumerable.Range(1, n).Select(i => "x" + i).ToArray();
+
+            // ---- TOP BLOCK: ranking table (rt, rank, c) ----
+            steps.Add(RenderRankingBlock(names, values, weights, capacity));
+
+            // Ratio order (descending profit/weight), safe if weight==0
+            var order = Enumerable.Range(0, n)
+                                  .Select(i => new
+                                  {
+                                      i,
+                                      r = (weights[i] == 0
+                                            ? (values[i] > 0 ? double.PositiveInfinity : 0.0)
+                                            : values[i] / weights[i])
+                                  })
+                                  .OrderByDescending(a => a.r)
+                                  .Select(a => a.i)
+                                  .ToArray();
+
+            // --- Root node (all unknown) ---
+            var root = NewNode(
+                fix: Enumerable.Repeat(-1, n).ToArray(),
+                parentLabel: null,
+                isRoot: true,
+                branchVarOrig: null,
+                branchValue: -1,
+                values: values,
+                weights: weights,
+                capacity: capacity,
+                order: order,
+                names: names);
+
+            steps.Add($"Initial bound: {root.Bound:0.###}");
+            steps.Add(RenderNodeBlock(root, names));
+
+            // Track best (optional informational only)
+            double bestVal = double.NegativeInfinity;
+            int[] bestSol = null;
+
+            // DFS stack; no pruning by bound; infeasible nodes are shown but not expanded
+            var stack = new Stack<Node>();
+            EnqueueChildren(root, isRoot: true, values, weights, capacity, order, names, stack);
+
+            while (stack.Count > 0)
+            {
+                var node = stack.Pop();
+                steps.Add(RenderNodeBlock(node, names));
+
+                // Infeasible: don't branch further
+                if (node.WeightFixed > capacity + 1e-9)
+                {
+                    steps.Add($"{node.Label} is infeasible (weight {node.WeightFixed:0.###} > capacity {capacity:0.###}).");
+                    continue;
+                }
+
+                // Integral leaf? record candidate and stop branching
+                if (!node.PivotOrig.HasValue)
+                {
+                    double cand = 0.0;
+                    for (int i = 0; i < n; i++)
+                        if (node.Plan.Any(p => p.orig == i && p.take >= 1.0 - 1e-9))
+                            cand += values[i];
+
+                    if (cand > bestVal)
+                    {
+                        bestVal = cand;
+                        bestSol = node.Fix.ToArray();
+
+                        // Fill unknowns with 0/1 from plan for a concrete vector
+                        for (int i = 0; i < n; i++)
+                        {
+                            if (bestSol[i] < 0)
+                                bestSol[i] = node.Plan.Any(p => p.orig == i && p.take >= 1.0 - 1e-9) ? 1 : 0;
+                        }
+
+                        steps.Add($"New best at {node.Label}: value = {bestVal:0.###}");
+                    }
+                    continue;
+                }
+
+                // Else: branch on pivot variable
+                EnqueueChildren(node, isRoot: false, values, weights, capacity, order, names, stack);
+            }
+
+            // Final best (optional)
+            if (bestSol != null)
+            {
+                steps.Add("\n=== BEST SOLUTION (from displayed leaves) ===");
+                steps.Add($"Value: {bestVal:0.###}");
+                steps.Add("Take: " + string.Join(", ",
+                    Enumerable.Range(0, n).Where(i => bestSol[i] == 1).Select(i => names[i])));
+            }
+
+            return steps;
+        }
+
+        private static string RenderRankingBlock(string[] names, double[] values, double[] weights, double capacity)
+        {
+            int n = names.Length;
+
+            // ratios and ranks
+            var ratio = new double[n];
+            for (int i = 0; i < n; i++)
+                ratio[i] = (weights[i] == 0)
+                    ? (values[i] > 0 ? double.PositiveInfinity : 0.0)
+                    : values[i] / weights[i];
+
+            var order = Enumerable.Range(0, n).OrderByDescending(i => ratio[i]).ThenBy(i => i).ToArray();
+            var rank = new int[n];
+            for (int pos = 0; pos < n; pos++)
+                rank[order[pos]] = pos + 1;
+
+            var sb = new System.Text.StringBuilder();
+            sb.AppendLine("Ranking (by profit/weight):");
+            sb.AppendLine("item\trt\trank\tc1");
+            for (int i = 0; i < n; i++)
+            {
+                string rtStr = double.IsPositiveInfinity(ratio[i])
+                    ? "inf"
+                    : ratio[i].ToString("0.###", CultureInfo.InvariantCulture);
+                sb.AppendLine($"{names[i]}\t{rtStr}\t{rank[i]}\t{weights[i].ToString("0.###", CultureInfo.InvariantCulture)}");
+            }
+            sb.AppendLine("RHS Value:\t\t" + capacity.ToString("0.###", CultureInfo.InvariantCulture));
+            sb.AppendLine(); // blank line
+            return sb.ToString();
+        }
+
+        private void EnqueueChildren(
+            Node node,
+            bool isRoot,
+            double[] values,
+            double[] weights,
+            double capacity,
+            int[] order,
+            string[] names,
+            Stack<Node> stack)
+        {
+            if (node.PivotOrig == null) return; // integral leaf
+
+            int k = node.PivotOrig.Value;
+            var fix0 = (int[])node.Fix.Clone(); fix0[k] = 0;
+            var fix1 = (int[])node.Fix.Clone(); fix1[k] = 1;
+
+            // Stack is LIFO:
+            // Root: show p1 (=0) before p2 (=1) => push 1 then 0
+            // Deeper: show ".1" (=1) before ".2" (=0) => push 0 then 1
+            var child0 = NewNode(fix0, node.Label, false, k, 0, values, weights, capacity, order, names);
+            var child1 = NewNode(fix1, node.Label, false, k, 1, values, weights, capacity, order, names);
+
+            stack.Push(child1);
+            stack.Push(child0);
+        }
+
+        private Node NewNode(
+            int[] fix,
+            string parentLabel,
+            bool isRoot,
+            int? branchVarOrig, // original index of the variable we just fixed (null for root)
+            int branchValue,    // 0 or 1 if not root
+            double[] values,
+            double[] weights,
+            double capacity,
+            int[] order,
+            string[] names)
+        {
+            // Compute bound + greedy plan + pivot for this partial fix
+            var (bound, vFixed, wFixed, pivotOrig, plan) = GreedyFromFix(fix, values, weights, capacity, order);
+
+            // Label + branch header
+            string label;
+            string hdr;
+
+            if (isRoot)
+            {
+                label = "p0";
+                hdr = "";
+            }
+            else
+            {
+                if (parentLabel == "p0")
+                    label = (branchValue == 0) ? "p1" : "p2";
+                else
+                    label = parentLabel + ((branchValue == 1) ? ".1" : ".2");
+
+                hdr = (branchVarOrig.HasValue ? $"{names[branchVarOrig.Value]} = {branchValue}" : "");
+            }
+
+            return new Node
+            {
+                Fix = (int[])fix.Clone(),
+                Label = label,
+                BranchHeader = hdr,
+                Bound = bound,
+                ValueFixed = vFixed,
+                WeightFixed = wFixed,
+                PivotOrig = pivotOrig,
+                Plan = plan
+            };
+        }
+
+        private (double bound, double vFixed, double wFixed, int? pivotOrig,
+         List<(int orig, double take, double left)> plan)
+    GreedyFromFix(int[] fix, double[] values, double[] weights, double capacity, int[] order)
+        {
+            int n = fix.Length;
+            double v = 0.0, w = 0.0;
+            double left = capacity;
+
+            var seq = new List<(int orig, double take, double left)>(n);
+
+            // 1) Apply fixed decisions (ORIGINAL index order)
+            for (int i = 0; i < n; i++)
+            {
+                if (fix[i] == 1)
+                {
+                    v += values[i];
+                    w += weights[i];
+                    left -= weights[i];
+                    seq.Add((i, 1.0, left));
+                }
+                else if (fix[i] == 0)
+                {
+                    seq.Add((i, 0.0, left));
+                }
+            }
+
+            // If already infeasible, still return a full "plan"
+            if (left < -1e-9)
+            {
+                var seen = new HashSet<int>(seq.Select(s => s.orig));
+                for (int i = 0; i < n; i++)
+                    if (!seen.Contains(i))
+                        seq.Add((i, 0.0, left)); // show 0 take and the same left for display
+                return (double.NegativeInfinity, v, w, null, seq.OrderBy(x => x.orig).ToList());
+            }
+
+            // 2) Greedy fill the unknowns in ratio order
+            int? pivot = null;
+            foreach (var j in order)
+            {
+                if (fix[j] != -1) continue; // skip fixed
+
+                if (left > 1e-9)
+                {
+                    if (weights[j] <= left + 1e-9)
+                    {
+                        v += values[j];
+                        left -= weights[j];
+                        seq.Add((j, 1.0, left));
+                    }
+                    else
+                    {
+                        double frac = left / weights[j];
+                        if (frac > 0)
+                        {
+                            v += values[j] * frac;
+                            left = 0.0;
+                            seq.Add((j, frac, left));
+                            pivot = j; // first fractional
+                        }
+                        break; // capacity exhausted
+                    }
+                }
+                else
+                {
+                    seq.Add((j, 0.0, left));
+                }
+            }
+
+            // 3) Ensure every variable appears exactly once
+            var seenAll = new HashSet<int>(seq.Select(s => s.orig));
+            for (int i = 0; i < n; i++)
+                if (!seenAll.Contains(i))
+                    seq.Add((i, 0.0, left));
+
+            return (v, vFixed: SumFixed(values, fix), wFixed: SumFixed(weights, fix),
+                    pivotOrig: pivot, plan: seq.OrderBy(x => x.orig).ToList());
+        }
+        private static double SumFixed(double[] arr, int[] fix)
+        {
+            double s = 0.0;
+            for (int i = 0; i < fix.Length; i++)
+                if (fix[i] == 1) s += arr[i];
+            return s;
+        }
+        private static string RenderNodeBlock(Node node, string[] names)
+        {
+            var sb = new System.Text.StringBuilder();
+
+            if (!string.IsNullOrWhiteSpace(node.BranchHeader))
+                sb.AppendLine(node.BranchHeader);
+
+            sb.AppendLine(node.Label);
+            sb.AppendLine("item\ty/n\tleft");
+
+            // Defensive map so every variable prints exactly one row
+            var map = node.Plan
+                .GroupBy(p => p.orig)
+                .ToDictionary(g => g.Key, g => g.Last());
+
+            for (int orig = 0; orig < names.Length; orig++)
+            {
+                (int orig, double take, double left) rec;
+                if (!map.TryGetValue(orig, out rec))
+                    rec = (orig, 0.0, double.NaN); // fallback
+
+                string takeStr =
+                    Math.Abs(rec.take) < 1e-9 ? "0" :
+                    Math.Abs(rec.take - 1.0) < 1e-9 ? "1" :
+                    rec.take.ToString("0.000", CultureInfo.InvariantCulture);   // 3 decimals
+
+                string leftStr = double.IsNaN(rec.left)
+                    ? ""
+                    : Math.Round(rec.left).ToString(CultureInfo.InvariantCulture);
+
+                sb.AppendLine($"{names[orig]}\t{takeStr}\t{leftStr}");
+            }
+
+            // Pivot and z (greedy bound)
+            sb.AppendLine("Pivot: " + (node.PivotOrig.HasValue ? names[node.PivotOrig.Value] : "(none)"));
+            string zStr = (double.IsNegativeInfinity(node.Bound) || double.IsNaN(node.Bound))
+                ? "infeasible"
+                : node.Bound.ToString("0.000", CultureInfo.InvariantCulture);
+            sb.AppendLine("z = " + zStr);
+
+            return sb.ToString();
+        }
+    }
+}

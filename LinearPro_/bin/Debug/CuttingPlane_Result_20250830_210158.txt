@@ -1,0 +1,22 @@
+LinearPro_ – Cutting Plane (Gomory) Result
+Timestamp: 30/08/2025 21:01:58
+
+Optimal Z (from tableau RHS): 15
+
+Solution (original variables):
+  X1 = 0
+  X2 = 1
+  X3 = 1
+  X4 = 1
+  X5 = 0
+  X6 = 1
+
+Note: Optimal integer solution found.
+
+Steps:
+  [CuttingPlane] Starting.
+  [Fractional] Variable X5 = 0.2
+  [Cut] Added Gomory cut (row 8), slack SC1, RHS -0.2.
+  [DualSimplex] Pivot r8, c9 -> enter S3, leave 8.
+  [DualSimplex] Feasible (no negative RHS).
+  [CuttingPlane] All integer/binary variables integral. Stopping.

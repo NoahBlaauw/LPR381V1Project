@@ -9,10 +9,29 @@ namespace LinearPro_.Algorithms
 {
     internal sealed class PrimalSimplex : IAlgorithm
     {
+        private List<double[]> _finalTableau;
+        private List<string> _finalColHeads;
+        private List<string> _finalRowHeads;
+
+        private List<double[]> _initialTableau;
+        private List<string> _initialColHeads;
+        private List<string> _initialRowHeads;
+
+        public List<double[]> GetInitialTableau() => _initialTableau;
+        public List<string> GetInitialColumnHeaders() => _initialColHeads;
+        public List<string> GetInitialRowHeaders() => _initialRowHeads;
+
+        public List<double[]> GetFinalTableau() => _finalTableau;
+        public List<string> GetColumnHeaders() => _finalColHeads;
+        public List<string> GetRowHeaders() => _finalRowHeads;
+
+
+
+
         public string Name => "Primal Simplex";
 
         // === Build canonical tableau ===
-        private List<double[]> ToCanonical(LPModel model, out List<string> colHeads, out List<string> rowHeads)
+        public List<double[]> ToCanonical(LPModel model, out List<string> colHeads, out List<string> rowHeads)
         {
             int numVars = model.ObjectiveCoefficients.Length;
             var constraints = model.Constraints;
@@ -120,11 +139,16 @@ namespace LinearPro_.Algorithms
             for (int i = 1; i < tableau.Count; i++)
                 rowHeads.Add($"C{i}");
 
+            _initialTableau = tableau.Select(row => row.ToArray()).ToList();
+            _initialColHeads = new List<string>(colHeads);
+            _initialRowHeads = new List<string>(rowHeads);
+
+
             return tableau;
         }
 
         // === Build printable table string ===
-        private string BuildTable(List<double[]> tableau, List<string> rowHeads, List<string> colHeads)
+        public string BuildTable(List<double[]> tableau, List<string> rowHeads, List<string> colHeads)
         {
             int colWidth = 12;
             var sb = new StringBuilder();
@@ -354,6 +378,10 @@ namespace LinearPro_.Algorithms
             // Phase 2
             var (t2, log2) = Phase2(tableau, rowHeads, colHeads);
             output.AddRange(log2);
+
+            _finalTableau = tableau;
+            _finalColHeads = colHeads;
+            _finalRowHeads = rowHeads;
 
             return output;
         }

@@ -12,6 +12,7 @@ namespace LinearPro_.Algorithms
     // basis exists. If not present, the solver will report Phase I is required.
     internal sealed class RevisedSimplex : IAlgorithm
     {
+
         public string Name => "Revised Simplex";
 
         // === Build canonical tableau ===
