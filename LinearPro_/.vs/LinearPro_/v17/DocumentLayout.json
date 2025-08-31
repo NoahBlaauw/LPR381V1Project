@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\algorithms\\nlp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|c:\\users\\cash\\documents\\github\\lpr381v1project\\linearpro_\\algorithms\\nlp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\nlp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -11,7 +11,7 @@
       "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:core\\app.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|c:\\users\\cash\\documents\\github\\lpr381v1project\\linearpro_\\algorithms\\primalsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\algorithms\\primalsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7E6FADF-55BC-49E2-A8A2-D546BC52306A}|LinearPro_.csproj|solutionrelative:algorithms\\primalsimplex.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -42,8 +42,7 @@
               "RelativeToolTip": "Algorithms\\PrimalSimplex.cs",
               "ViewState": "AgIAAE8BAAAAAAAAAAAAAGUBAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T21:58:07.57Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T21:58:07.57Z"
             },
             {
               "$type": "Document",
@@ -53,7 +52,7 @@
               "RelativeDocumentMoniker": "Algorithms\\NLP.cs",
               "ToolTip": "C:\\Users\\cash\\Documents\\GitHub\\LPR381V1Project\\LinearPro_\\Algorithms\\NLP.cs",
               "RelativeToolTip": "Algorithms\\NLP.cs",
-              "ViewState": "AgIAAA0AAAAAAAAAAAAAABgAAABGAAAAAAAAAA==",
+              "ViewState": "AgIAAG8AAAAAAAAAAAAYwHoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-08-30T14:21:01.426Z",
               "EditorCaption": ""
@@ -68,8 +67,7 @@
               "RelativeToolTip": "IO\\FileService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T12:33:04.818Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T12:33:04.818Z"
             },
             {
               "$type": "Document",
@@ -81,8 +79,7 @@
               "RelativeToolTip": "IO\\Parser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-30T12:33:07.579Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-30T12:33:07.579Z"
             },
             {
               "$type": "Document",
@@ -94,8 +91,7 @@
               "RelativeToolTip": "Core\\App.cs",
               "ViewState": "AgIAAH4AAAAAAAAAAAAAAIYAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-08-18T17:49:35.129Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-18T17:49:35.129Z"
             }
           ]
         }
