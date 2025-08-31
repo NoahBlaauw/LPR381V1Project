@@ -150,12 +150,14 @@ namespace LinearPro_.Algorithms
                     localMaxOrMin = GetMaxOrMinFromUser();
                     steps.Add("We here unable to find |H|. User feedback has been gathered");
                 }
+                steps.Add("Steepest ascent/descent algorithm not yet implemented");
 
             }
             else
             {
                 steps.Add("The function has more than 2 variables, so we cannot check for concavity/convexity.");
             }
+
 
                 return steps;
         }
