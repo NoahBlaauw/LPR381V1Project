@@ -30,8 +30,8 @@ namespace LinearPro_.Algorithms
 
         public string Differentiate(string function, string variable)
         {
-            var expr = function.ToEntity();
-            var derivative = expr.Differentiate(variable).Simplify();
+            var func = function.ToEntity();
+            var derivative = func.Differentiate(variable).Simplify();
             return derivative.ToString();
         }
 
@@ -52,8 +52,10 @@ namespace LinearPro_.Algorithms
 
             steps.Add("Now lets check if the function has a local maximum or a local minimum");
             steps.AddRange(ConcavityCheck());
-            if(GetVariableCount() == 1)
+
+            if (GetVariableCount() == 1)
             {
+                
                 steps.AddRange(GoldenSectionSearch());
             }
             
@@ -102,7 +104,7 @@ namespace LinearPro_.Algorithms
             }
             else if (GetVariableCount() == 2)
             {
-                steps.Add("H = \t⎡ fxx   fxy ⎤\r\n\t⎣ fxy   fyy ⎦\r\n");
+                steps.Add("H = \t[ fxx   fxy ]\r\n\t[ fxy   fyy ]\r\n");
                 fx = Differentiate(function, "x");
                 steps.Add("fx = " + fx.ToString().Replace(" * ", ""));
                 fxx = Differentiate(fx, "x");
@@ -114,8 +116,8 @@ namespace LinearPro_.Algorithms
                 fxy = Differentiate(fx, "y");
                 steps.Add("fxy = " + fxy.ToString().Replace(" * ", ""));
 
-                steps.Add($"\nH = \t⎡ {fxx.ToString().Replace(" * ", "")}   {fxy.ToString().Replace(" * ", "")} ⎤" +
-                    $"\r\n\t⎣ {fxy.ToString().Replace(" * ", "")}   {fyy.ToString().Replace(" * ", "")} ⎦\r\n");
+                steps.Add($"\nH = \t[ {fxx.ToString().Replace(" * ", "")}   {fxy.ToString().Replace(" * ", "")} ]" +
+                    $"\r\n\t[ {fxy.ToString().Replace(" * ", "")}   {fyy.ToString().Replace(" * ", "")} ]\r\n");
 
 
 
@@ -183,15 +185,14 @@ namespace LinearPro_.Algorithms
         public List<string> GoldenSectionSearch()
         {
             var steps = new List<string>();
-            if (localMaxOrMin.ToLower() != "max" && localMaxOrMin.ToLower() != "min")
-            {
-                steps.Add("The curviture test for the function was inconclusive or the function lies at a saddle point");
-                return steps;
-            }
+            //if (localMaxOrMin.ToLower() != "max" && localMaxOrMin.ToLower() != "min")
+            //{
+            //    steps.Add("The curviture test for the function was inconclusive or the function lies at a saddle point");
+            //    return steps;
+            //}
             double r = (Math.Sqrt(5) - 1) / 2; //Golden ratio constant
             double d = r * (xhigh - xlow), x1 = xlow + d, x2 = xhigh - d, fx1 = Substitute("x", x1), fx2 = Substitute("x", x2), stoppingCriteria = xhigh - xlow;
             
-            string smallestVar;
             steps.Add($"Initial bounds: xlow = {xlow}, xhigh = {xhigh}");
             steps.Add("xlow\txhigh\td\tx1\tx2\tf(x1)\tf(x2)\tƐ");//NB Make more visually appealing later
             steps.Add(goldenSelectionRow(x1, x2, fx1, fx2, d, stoppingCriteria));
@@ -231,7 +232,6 @@ namespace LinearPro_.Algorithms
                 
                 stoppingCriteria = xhigh - xlow;
                 steps.Add(goldenSelectionRow(x1, x2, fx1, fx2, d, stoppingCriteria));
-                //break; //Temporary break to avoid infinite loop
             }
 
             steps.Add($"\nOptimal solution found at x = {(xlow + xhigh) / 2}, f(x) = {Substitute("x", (xlow + xhigh) / 2)}");
