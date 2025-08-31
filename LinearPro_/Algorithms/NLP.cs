@@ -8,6 +8,7 @@ using System.Windows.Forms.VisualStyles;
 //NB: Requires AngouriMath NuGet package
 using AngouriMath;
 using AngouriMath.Extensions;
+using static AngouriMath.MathS;
 
 namespace LinearPro_.Algorithms
 {
@@ -72,22 +73,31 @@ namespace LinearPro_.Algorithms
                 fxx = Differentiate(fx, "x");
                 steps.Add("f''(x) = " + fxx.ToString().Replace(" * ", ""));
 
-                //NB: For now we are asuming that fxx is always a numerical value
-                if (double.Parse(fxx) < 0)//testing if fxx>0 or <0
+                // We are assuming that fxx can sometimes be symbolic, so we check before parsing
+                if (double.TryParse(fxx, out double fxxVal))
                 {
-                    localMaxOrMin = "Max"; 
-                    steps.Add("Since f''(x) < 0, the function is convex and has a local maximum.");
-                }
-                else if(double.Parse(fxx) > 0)
-                {
-                    localMaxOrMin = "Min"; 
-                    steps.Add("Since f''(x) > 0, the function is concave and has a local minimum.");
+                    if (fxxVal < 0)
+                    {
+                        localMaxOrMin = "Max";
+                        steps.Add("Since f''(x) < 0, the function is convex and has a local maximum.");
+                    }
+                    else if (fxxVal > 0)
+                    {
+                        localMaxOrMin = "Min";
+                        steps.Add("Since f''(x) > 0, the function is concave and has a local minimum.");
+                    }
+                    else
+                    {
+                        localMaxOrMin = GetMaxOrMinFromUser();
+                        steps.Add("Since f''(x) = 0, the test is inconclusive. User feedback has been gathered");
+                    }
                 }
                 else
                 {
-                    localMaxOrMin = "Inconclusive";
-                    steps.Add("Since f''(x) = 0, the test is inconclusive.");
+                    localMaxOrMin = GetMaxOrMinFromUser();
+                    steps.Add("The sign test for f''(x) inconclusive. User feedback has been gathered");
                 }
+
 
             }
             else if (GetVariableCount() == 2)
@@ -109,34 +119,37 @@ namespace LinearPro_.Algorithms
 
 
 
-                //NB: Again, we assume that fxx, fyy and fxy are always numerical values
+                if (double.TryParse(fxx, out double fxxVal) && double.TryParse(fyy, out double fyyVal) && double.TryParse(fxy, out double fxyVal))
+                {
+                    double derH = fxxVal * fyyVal - Math.Pow(fxyVal, 2);
+                    steps.Add($"|H| = fxx * fyy - (fxy)^2 = {derH}");
 
-                double derH = double.Parse(fxx) * double.Parse(fyy) - Math.Pow(double.Parse(fxy), 2);
-                steps.Add("|H| = fxx * fyy - (fxy)^2 = " + derH);
-                if (derH > 0 && double.Parse(fxx) > 0)
-                {
-                    localMaxOrMin = "Min"; 
-                    steps.Add("Since |H| > 0 and fxx > 0, the function is concave and has a local minimum.");
-                }
-                else if(derH > 0 && double.Parse(fxx) < 0)
-                {
-                    localMaxOrMin = "Max"; 
-                    steps.Add("Since |H| > 0 and fxx < 0, the function is convex and has a local maximum.");
-                }
-                else if(derH < 0)
-                {
-                    localMaxOrMin = "Saddle Point"; 
-                    steps.Add("Since |H| < 0, the function has a saddle point.");
+                    if (derH > 0 && fxxVal > 0)
+                    {
+                        localMaxOrMin = "Min";
+                        steps.Add("Since |H| > 0 and fxx > 0, the function is concave and has a local minimum.");
+                    }
+                    else if (derH > 0 && fxxVal < 0)
+                    {
+                        localMaxOrMin = "Max";
+                        steps.Add("Since |H| > 0 and fxx < 0, the function is convex and has a local maximum.");
+                    }
+                    else if (derH < 0)
+                    {
+                        localMaxOrMin = "Saddle Point";
+                        steps.Add("Since |H| < 0, the function has a saddle point.");
+                    }
+                    else
+                    {
+                        localMaxOrMin = "Inconclusive";
+                        steps.Add("Since |H| = 0, the test is inconclusive.");
+                    }
                 }
                 else
                 {
-                    localMaxOrMin = "Inconclusive"; 
-                    steps.Add("Since |H| = 0, the test is inconclusive.");
+                    localMaxOrMin = GetMaxOrMinFromUser();
+                    steps.Add("We here unable to find |H|. User feedback has been gathered");
                 }
-
-                
-
-
 
             }
             else
@@ -145,6 +158,24 @@ namespace LinearPro_.Algorithms
             }
 
                 return steps;
+        }
+        public string GetMaxOrMinFromUser()
+        {
+            string result;
+            Console.Write("We were unable to find a local maximum or minimum.\nTo contunie the calculation, please enter 'max' or 'min' to indicate weather you would like to find the local maximum or minimum in a given area: ");
+            while (true)
+            {
+                result = Console.ReadLine()?.Trim().ToLower();
+
+                if (result == "max" || result == "min")
+                {
+                    return result;
+                }
+                else
+                {
+                    Console.Write("Invalid input. Please enter 'max' or 'min': ");
+                }
+            }
         }
 
         public List<string> GoldenSectionSearch()
